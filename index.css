@@ -1,0 +1,65 @@
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0; /* Defina a margem para 0 para evitar espaços extras nas bordas */
+    flex-direction: column; /* Adicione essa linha para alinhar elementos verticalmente */
+  }
+  
+  h1 {
+    font-size: 4rem; /* Exemplo de tamanho de fonte responsivo */
+    text-align: center;
+    margin-right: 1%;
+  }
+  
+  .c-loader {
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #ad51db;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .eu {
+    display: flex;
+    flex-direction: column; /* Coloca o conteúdo em uma coluna vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+    margin-top: 20px; /* Espaço entre a imagem e o texto */
+  }
+  
+  .eu img {
+    width: 90%; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Isso garante que a proporção da imagem seja mantida */
+  
+  }
+  
+  
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+  /* Adicione media queries para ajustar estilos em tamanhos de tela diferentes */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 3rem; /* Ajuste o tamanho da fonte para telas menores */
+    }
+    .eu img {
+      width: 80px; /* Reduza o tamanho da imagem para telas menores, se necessário */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+    .eu img {
+      width: 60px; /* Reduza ainda mais o tamanho da imagem para telas menores, se necessário */
+    }
+  }
+  
